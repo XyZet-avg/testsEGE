@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    margin: 20px;
+    position: absolute;
+    top: 220px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+}
+
+.question-table {
+    border-radius: 10px;
+    width: 70%;
+}
+
+.question-table th, .question-table td {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.question-table th {
+    background-color: #f2f2f2;
+}
+
+.sidebar {
+    width: 30%;
+    padding-left: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.question-item {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.question-item:hover {
+    background-color: #e2e2e2;
+}
+/*шапка-навигация*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #81c4fb;
+    z-index: 99;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    display: block;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000;
+    transition: .5s;
+}
+
+header nav ul li a:hover {
+    background: #162938;
+    color: #fff;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0,.1);
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+.answers-text  {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 45px;
+}
+
+/*.correct {
+    position: absolute;
+    border: 2px solid #162938;
+    border-radius: 5px;
+    top: 100%;
+    left: 10px;
+    width: 15%;
+    height: 6%;
+}*/
