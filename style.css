@@ -97,14 +97,14 @@ nav ul li:hover > ul {
 .main_text {
     position: absolute;
     border: 100px;
-    background: rgba(69, 84, 252, 0.3);
+    background: rgba(69, 84, 252);
     border-radius: 10px;
     height: 300px;
     width: cover;
     top: 100%;
     left: cover;
     font-size: 20px;
-    outline: 7px solid rgba(69, 84, 252, 0.3);
+    outline: 7px solid rgba(69, 84, 252);
     color: white;
 }
 
@@ -304,4 +304,39 @@ body {
     min-height: 100vh;
     background: url(img/Vmake-1731522314.jpg) no-repeat center center fixed;
     background-size: 100%;
+}
+
+.nav-bottom {
+    position: fixed;
+    height: 100px;
+    top: 95%;
+    left: 0;
+    right: 0;
+    background: #162938;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #81c4fb;
+    z-index: 99;
+    float: left;
+}
+
+.btninfo-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #162938;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.btninfo-popup:hover {
+    background: #fff;
+    color: #162938;
 }
